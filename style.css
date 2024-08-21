@@ -1,20 +1,22 @@
-* {
-    
-}
-
-body{
+body {
     background-color: rgb(6, 25, 46);
     font-family:fantasy;
 
 }
-h1{
+
+h1 {
     color: rgb(161, 152, 15);
     
     font-size: 69px;
     text-align: center;
 }
-ul{
-    color: beige;
+
+h1:hover {
+    color: fuchsia;
+}
+
+ul {
+    color: rgb(207, 206, 116);
     font-size: 40px;
     list-style-type: none;
     display: flex;
@@ -22,4 +24,14 @@ ul{
     justify-content: center;
     align-items: center; 
     gap: 1em;
+    border: 1px solid beige;
+    border-radius: 0px 90px ;
+}
+
+ul:hover{
+    border-radius: 90px 0px;
+}
+
+li:hover{
+    color: fuchsia;
 }
