@@ -1,3 +1,8 @@
+// global variables
+let humanScore = 0;
+let computerScore = 0;
+
+//function to get computer choice
 function getComputerChoice(){
   //array with choices
     let choices = ["Rock", "Paper", "Scissors"]
@@ -7,14 +12,15 @@ function getComputerChoice(){
     return computerChoice;
 }
 
+//function to get human choice
 function getHumanChoice() {
   // human input
     let humanChoice = prompt("Enter Rock, Paper or Scissors:");
     console.log(humanChoice);
     return humanChoice;
-    
 }
 
+//function to play round
 function playRound(humanChoice, computerChoice) {
   //convert to lowercase to compare strings
   humanChoice = humanChoice.toLowerCase();
@@ -33,13 +39,10 @@ function playRound(humanChoice, computerChoice) {
   } else {
     console.log(`YOU LOSE!!! ${computerChoice} beats ${humanChoice}`);
     computerScore++;
-    
   }
 }
 
-let humanScore = 0;
-let computerScore = 0;
+// Execute the game
 let computerChoice = getComputerChoice();
 let humanChoice = getHumanChoice();
-
 playRound(humanChoice, computerChoice);
