@@ -50,6 +50,7 @@ let humanChoice = getHumanChoice();
 playRound(humanChoice, computerChoice);
 }
 
-// Execute the game
-
-playGame();
+// Execute the game   added a for loop 
+for(let i = 0; i < 5; i++){
+  playGame();
+}
