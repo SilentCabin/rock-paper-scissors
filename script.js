@@ -1,3 +1,7 @@
+  // score variables
+  let humanScore = 0;
+  let computerScore = 0;
+
 //function to get computer choice
 function getComputerChoice(){
   //array with choices
@@ -18,9 +22,9 @@ function getHumanChoice() {
 
 //function to play rounds, and game
 function playGame() {
-  // score variables
-  let humanScore = 0;
-  let computerScore = 0;
+  // // score variables
+  // let humanScore = 0;
+  // let computerScore = 0;
 
 
   //function to play round
@@ -49,6 +53,7 @@ let computerChoice = getComputerChoice();
 let humanChoice = getHumanChoice();
 playRound(humanChoice, computerChoice);
 }
+
 
 // Execute the game   added a for loop 
 for(let i = 0; i < 5; i++){
