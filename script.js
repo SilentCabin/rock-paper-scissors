@@ -21,6 +21,8 @@ function playGame() {
   // score variables
   let humanScore = 0;
   let computerScore = 0;
+
+
   //function to play round
   function playRound(humanChoice, computerChoice) {
     //convert to lowercase to compare strings
