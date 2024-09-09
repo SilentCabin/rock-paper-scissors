@@ -56,8 +56,11 @@ playRound(humanChoice, computerChoice);
 
 // Execute the game
 // ive called 5 times instead of a for loop, which is my next step
-playGame();
-playGame();
-playGame();
-playGame();
-playGame();
+// playGame();
+// playGame();
+// playGame();
+// playGame();
+// playGame();
+while (humanScore < 5 && computerScore < 5) {
+  playGame();
+}
